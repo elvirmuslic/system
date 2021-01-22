@@ -1,0 +1,28 @@
+@import "../scss/vars";
+
+.widget {
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    min-height: 361px;
+
+    &--title {
+        text-transform: uppercase;
+        color: $primary-black;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 379px) {
+    .widget {
+        min-width: 324px;
+    }
+}
+@media screen and (max-width: 409px) {
+    .widget {
+        min-width: 313px;
+        margin-left: -11px;
+    }
+}

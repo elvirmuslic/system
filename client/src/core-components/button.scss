@@ -1,0 +1,128 @@
+@import "../scss/vars";
+
+.button {
+
+    &_primary,
+    &_secondary,
+    &_tertiary {
+        border: solid transparent;
+        border-radius: 4px;
+        color: white;
+        height: 47px;
+        text-transform: uppercase;
+        transition: background-color 0.2s ease;
+    }
+
+    &_primary {
+        background-color: $primary-red;
+
+        &:focus, &:hover {
+            background-color: lighten($primary-red, 5%);
+            outline: none;
+        }
+
+
+        &.button_disabled,
+        &.button_disabled:hover {
+            background-color: lighten($primary-red, 15%);
+        }
+    }
+
+    &_secondary {
+        background-color: $primary-green;
+
+        &:focus, &:hover {
+            background-color: lighten($primary-green, 5%);
+            outline: none;
+        }
+
+        &.button_disabled,
+        &.button_disabled:hover {
+            background-color: lighten($primary-green, 15%);
+        }
+    }
+
+    &_tertiary {
+        background-color: $secondary-blue;
+
+        &:focus, &:hover {
+            background-color: lighten($secondary-blue, 5%);
+            outline: none;
+        }
+
+        &.button_disabled,
+        &.button_disabled:hover {
+            background-color: lighten($secondary-blue, 15%);
+        }
+    }
+
+    &_extra-small {
+        text-transform: none;
+        width: 130px;
+        height: 30px;
+    }
+
+    &_small {
+        width: 100px;
+        height: 47px;
+    }
+
+    &_medium {
+        min-width: 70px;
+        width: auto;
+        padding: 5px 15px;
+        height: 35px;
+        text-transform: none;
+    }
+
+    &_large {
+        width: 239px;
+    }
+
+    &_auto {
+        width: initial;
+        height: initial;
+    }
+
+    &_clean {
+        background: none;
+        border: none;
+        width: initial;
+        height: initial;
+    }
+
+    &_link {
+        background: none;
+        border: none;
+        color: $dark-grey;
+        width: initial;
+        height: initial;
+
+        &:focus, &:hover {
+            outline: none;
+            text-decoration: underline;
+        }
+    }
+
+    &_inverted {
+        background-color: white;
+
+        &:focus, &:hover {
+            background-color: white;
+            opacity: 0.9;
+            outline: none;
+        }
+
+        &.button_primary {
+            color: $primary-red;
+        }
+
+        &.button_secondary {
+            color: $primary-green;
+        }
+
+        &.button_tertiary {
+            color: $secondary-blue;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import "../scss/vars";
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+    &__children {
+        cursor: default;
+    }
+
+    &__animated-container {
+        position: relative;
+    }
+
+    &__message {
+        position: absolute;
+        bottom: 100%;
+        margin-bottom: 15px;
+        margin-left: -15px;
+        border: 0 solid rgba(0, 0, 0, 0.247059);
+        box-shadow: rgba(0, 0, 0, 0.247059) 0 -1px 4px;
+        border-radius: 4px;
+        min-width: 200px;
+        background-color: white;
+        color: black;
+        padding: 10px;
+        z-index: 900;
+    }
+
+    &__pointer {
+        border: solid transparent;
+        position: absolute;
+        border-top-color: white;
+        border-width: 13px;
+        top: -15px;
+        left: 50%;
+        margin-left: -13px;
+        z-index: 910;
+        pointer-events: none;
+    }
+
+    &__pointer-shadow {
+        border: solid transparent;
+        position: absolute;
+        border-top-color: rgba(black, 0.1);
+        border-width: 14px;
+        top: -15px;
+        left: 50%;
+        margin-left: -14px;
+        pointer-events: none;
+    }
+}

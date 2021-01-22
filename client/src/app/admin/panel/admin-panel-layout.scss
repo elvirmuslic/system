@@ -1,0 +1,13 @@
+.admin-panel-layout {
+    padding: 0 10px;
+
+    &__header {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 415px) {
+        .admin-panel-layout__content__widget {
+            padding: 20px 5px;
+        }
+    }
+}

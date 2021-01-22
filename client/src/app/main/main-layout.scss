@@ -1,0 +1,27 @@
+@import "../../scss/vars";
+
+
+.main-layout {
+    margin: 0 auto;
+    background-color: $grey;
+    max-width: 1100px;
+    border-radius: 4px;
+    transition: max-height 0.15s ease-out;
+
+    &--content {
+        min-height: 400px;
+        padding: 20px;
+
+        @media screen and (min-width: 993px) and (max-width: 1032px) {
+            padding: 20px 0.45%;
+        }
+
+        @media screen and (max-width: 353px) {
+            padding: 20px 10px;
+        }
+
+        @media screen and (max-width: 333px) {
+            padding: 20px 0;
+        }
+    }
+}

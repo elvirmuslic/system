@@ -1,0 +1,255 @@
+@import "../scss/vars";
+
+.ticket-viewer {
+    &__header {
+        background-color: $primary-blue;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        color: white;
+        font-size: 16px;
+        padding: 6px 0;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+
+        &:hover {
+            .ticket-viewer__edit-title-icon {
+                color: $grey;
+            }
+        }
+    }
+
+    &__buttons-column {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__buttons-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 250px;
+    }
+
+    &__edited-title-text {
+        font-style: italic;
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    &__edit-icon {
+        right: 12px;
+        margin: 0 10px;
+        color: $light-grey;
+
+        &:hover {
+            cursor:pointer;
+        }
+    }
+
+    &__edit-title-icon {
+        color: $primary-blue;
+        right: 12px;
+        margin: 0 10px;
+
+        &:hover {
+            cursor:pointer;
+        }
+    }
+
+    &__edit-status__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    &___input-edit-title {
+        color: black;
+        align-items:center;
+        justify-content: center;
+        margin-bottom: 6px;
+        margin-right: 6px;
+
+        .input__text {
+            height: 25px;
+        }
+    }
+
+    &__edit-title__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 160px;
+    }
+    &__number {
+        color: white;
+        margin-right: 30px;
+        font-size: 14px;
+    }
+
+    &__title {
+        max-width: 375px;
+    }
+
+    &__flag {
+        margin-left: 30px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: $light-grey;
+        padding: 0 15px 30px 15px;
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            min-width: 150px;
+            max-width: 250px;
+        }
+
+        &-container-editable {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            min-width: 300px;
+
+            &:hover {
+                .ticket-viewer__edit-icon {
+                    color: $primary-blue;
+                }
+            }
+
+            &__column {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                min-width: 170px;
+            }
+        }
+
+        &-header {
+            font-weight: bold;
+        }
+
+        &-value {
+            color: $secondary-blue;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+    }
+
+    &__editable-dropdown {
+        margin: auto;
+
+        .drop-down__current-item {
+            background-color: $very-light-grey;
+        }
+    }
+
+    &__content {
+        margin-top: 10px;
+    }
+
+    &__comments {
+        position: relative;
+    }
+
+    &__response {
+        margin-top: 20px;
+        position: relative;
+
+        &-title {
+            background-color: $primary-blue;
+            text-align: left;
+            padding: 5px;
+            color: white;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+
+        &-field {
+            background-color: $very-light-grey;
+            padding: 20px;
+            text-align: left;
+        }
+
+        &-actions {
+            background-color: $very-light-grey;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-custom {
+            padding: 20px 0 0 20px;
+            text-align: left;
+        }
+
+        &-private {
+            padding: 20px 20px 0 0;
+
+            &-info {
+                margin-left: 5px;
+            }
+        }
+
+        &-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    }
+
+    &__delete-button {
+    }
+
+    @media screen and (max-width: 1151px) {
+        .ticket-viewer__info  {
+            &-container {
+                width: 200px;
+                min-width: unset;
+                max-width: unset;
+            }
+
+            &-container-editable {
+                min-width: 250px;
+                max-width: 300px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .ticket-viewer__info  {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 571px) {
+        .ticket-viewer {
+            &__number, &__edit-title-icon {
+                margin: 0 5px;
+            }
+
+            &__flag {
+                padding: 0 10px;
+            }
+        }
+    }
+}

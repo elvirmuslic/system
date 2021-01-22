@@ -1,0 +1,12 @@
+@import "../../scss/vars";
+
+.install-step-6 {
+
+    &__message {
+        margin-bottom: 20px;
+    }
+
+    &__next {
+        min-width: 70px;
+    }
+}

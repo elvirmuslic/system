@@ -1,0 +1,27 @@
+@import '../../../../scss/vars';
+
+.admin-panel-view-ticket {
+    margin: 10px;
+
+    &__loading {
+        background-color: $grey;
+        height: 400px;
+    }
+
+    &__error {
+
+    }
+
+    &__ticket-view {
+        margin: 20px 30px;
+    }
+
+    @media screen and (max-width: 415px) {
+        margin: 0;
+
+        .admin-panel-view-ticket__ticket-view {
+            margin: 20px 0;
+        }
+    }
+
+}

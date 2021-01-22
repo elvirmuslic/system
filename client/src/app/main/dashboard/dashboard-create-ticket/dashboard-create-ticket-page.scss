@@ -1,0 +1,10 @@
+.dashboard-create-ticket-page {
+
+    &_wrapped {
+        padding: 0 10px;
+
+        @media screen and (min-width: 993px){
+            float: none;
+        }
+    }
+}

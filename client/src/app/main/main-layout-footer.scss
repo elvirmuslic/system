@@ -1,0 +1,52 @@
+@import "../../scss/vars";
+
+.main-layout-footer {
+    background-color: $primary-blue;
+    text-align: center;
+    min-height: 32px;
+    width: 100%;
+
+    &__powered,
+    &__extra-links {
+        float: right;
+        padding-right: 20px;
+        color: white;
+        display: inline-block;
+        padding-top: 6px;
+    }
+
+    &__extra-link,
+    &__os-link {
+        color: $secondary-blue;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    &__os-link {
+        color: $secondary-red;
+    }
+
+    &_admin-panel {
+        .main-layout-footer__powered {
+            float: left;
+            padding-left: 20px;
+        }
+    }
+
+    @media screen and (max-width: 415px) {
+        &_admin-panel {
+            .main-layout-footer {
+                &__powered,
+                &__extra-link {
+                    float: unset;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

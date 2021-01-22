@@ -1,0 +1,85 @@
+@import "../scss/vars";
+
+.topic-viewer {
+    text-align: left;
+    margin: 35px 0;
+
+    &__header {
+        cursor: default;
+        margin-bottom: 20px;
+        font-size: $font-size--bg;
+
+        &:hover {
+            .topic-viewer__edit-icon {
+                display: inline-block;
+            }
+        }
+    }
+
+    &__icon {
+        color: $primary-green;
+    }
+
+    &__title {
+        font-size: $font-size--md;
+        margin-left: 15px;
+    }
+
+    &__private {
+        margin-left: 10px;
+    }
+
+    &__edit-icon {
+        color: $grey;
+        cursor: pointer;
+        margin-left: 10px;
+        display: none;
+    }
+
+    &__list {
+
+        &-item {
+            display: inline-block;
+            width: 50%;
+            color: $secondary-blue;
+            margin-bottom: 10px;
+            user-select: none;
+
+            &-hidden {
+                opacity: 0;
+            }
+
+            &:hover {
+                .topic-viewer__grab-icon {
+                    display: inline-block;
+                    left: 0;
+                }
+            }
+
+            &-button {
+                user-select: none;
+            }
+        }
+
+        &-item:before {
+            content: "• ";
+            color: $grey;
+        }
+
+        &-item-button {
+            display: inline-block;
+            color: $secondary-blue;
+        }
+    }
+
+    &__grab-icon {
+        color: $grey;
+        cursor: move;
+        margin-left: 10px;
+        display: none;
+    }
+
+    &__add-item {
+        color: $dark-grey;
+    }
+}

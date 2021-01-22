@@ -1,0 +1,44 @@
+@import "../scss/vars";
+
+.card {
+    border-radius: 4px;
+    color: white;
+    height: 260px;
+    padding: 15px;
+    position: relative;
+
+    &__title {
+        font-variant: small-caps;
+        margin: 10px 0;
+        font-size: $font-size--lg;
+    }
+
+    &__description {
+        font-size: $font-size--sm;
+    }
+
+    &__button {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 17px;
+    }
+
+    @media (max-width: 1060px) {
+        .button {
+            width: 80%;
+        }
+    }
+
+    &_red {
+        background-color: $primary-red;
+    }
+
+    &_blue {
+        background-color: $secondary-blue;
+    }
+
+    &_green {
+        background-color: $primary-green;
+    }
+}

@@ -1,0 +1,67 @@
+@import '../../../../scss/vars';
+
+.admin-panel-view-user {
+
+    &__info {
+        text-align: left;
+
+        &-item {
+            display: inline-block;
+            margin-right: 20px;
+            min-width: 200px;
+            margin-top: 10px;
+        }
+
+        &-box {
+            background-color: $grey;
+            color: $primary-black;
+            font-size: $font-size--sm;
+            padding: 5px 15px;
+            text-align: center;
+        }
+    }
+
+    &__empty-content {
+        font-style: italic;
+        color: $dark-grey;
+    }
+
+    &__action-buttons {
+        margin-top: 20px;
+    }
+
+    &__action-button {
+        margin-right: 20px;
+    }
+
+    &__tickets-title {
+        font-size: $font-size--md;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    &__supervised-users-header {
+        font-size: $font-size--md;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    &__supervised-users-content {
+        display:flex;
+        flex-direction: column;
+        align-items:flex-start; 
+    }
+
+    &__supervised-users-message {
+        margin-top: 20px
+    }
+    
+    &__submit-button {
+        margin-top: 20px;
+    }
+
+    &__unverified {
+        margin-left: 15px;
+    }
+    
+}

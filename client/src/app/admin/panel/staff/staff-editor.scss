@@ -1,0 +1,223 @@
+@import '../../../../scss/vars';
+
+.staff-editor {
+
+    &__image-uploader {
+        opacity: 0;
+    }
+
+    &__card {
+        background-color: $primary-red;
+        position: relative;
+        width: 100%;
+        height: 355px;
+        text-align: center;
+        border: 2px solid $grey;
+        margin-bottom: 20px;
+
+        &-pic {
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+
+            &-background {
+                background-color: black;
+                opacity: 0;
+                transition: opacity 0.2s ease;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 10;
+            }
+
+            &-icon {
+                position: absolute;
+                color: white;
+                opacity: 0;
+                transition: opacity 0.2s ease;
+                top: 70px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 11;
+            }
+
+            &-wrapper {
+                transition: opacity 0.2s ease;
+                background-color: white;
+                position: absolute;
+                top: 20px;
+                border: 4px solid $grey;
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                text-align: center;
+                left: 50%;
+                transform: translate(-50%, 0);
+                opacity: 1;
+
+                &_loading,
+                &:hover {
+                    cursor: pointer;
+
+                    .staff-editor__card-pic-background {
+                        opacity: 0.6;
+                    }
+
+                    .staff-editor__card-pic-icon {
+                        opacity: 0.8;
+                    }
+
+                    .staff-editor__card-pic-loading {
+                        position: absolute;
+                        top: 0;
+                        z-index: 11;
+                    }
+                }
+            }
+        }
+
+        &-data {
+            position: absolute;
+            background-color: white;
+            bottom: 0;
+            width: 100%;
+            height: 175px;
+            padding-top: 50px;
+        }
+
+        &-name {
+            font-size: $font-size--lg;
+        }
+
+        &-info {
+            padding-top: 30px;
+        }
+
+        &-badge {
+            display: inline-block;
+            width: 33%;
+
+            &-text {
+                display: block;
+            }
+
+            &-red,
+            &-green,
+            &-blue {
+                border-radius: 4px;
+                color: white;
+                display: inline-block;
+                width: 70%;
+                margin-bottom: 5px;
+            }
+
+            &-red {
+                background-color: $primary-red;
+            }
+
+            &-green {
+                background-color: $primary-green;
+            }
+
+            &-blue {
+                background-color: $secondary-blue;
+            }
+        }
+    }
+
+    &__form {
+
+    }
+
+    &__submit-button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        min-width: 180px;
+    }
+
+    &__update-email,
+    &__update-password,
+    &__update-level,
+    &__update-email-setting {
+        position: relative;
+    }
+
+    &__update-email-setting {
+        margin-top: 28px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    &__departments {
+        border: 1px solid $grey;
+        padding: 20px 50px;
+        text-align: left;
+    }
+
+    &__departments-title {
+        font-size: $font-size--md;
+        text-align: center;
+    }
+
+    &__tickets {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+
+    &__tickets-title {
+        font-size: $font-size--md;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    &__separator {
+        margin: 3px 0;
+    }
+
+    &__message {
+        margin-bottom: 20px;
+    }
+
+    &__delete {
+        border: 1px solid $grey;
+        padding: 20px 50px;
+        text-align: right;
+    }
+
+    &__delete-title {
+        font-size: $font-size--md;
+        text-align: center;
+        float: left;
+        margin-top: 11px;
+    }
+
+    &__level-info {
+        width: 360px;
+        font-size: $font-size--sm;
+
+        &-box {
+            margin-top: 5px;
+        }
+
+        &-title {
+            color: $secondary-blue;
+        }
+
+        &-description {
+            color: $dark-grey;
+        }
+    }
+
+    &__activity {
+
+        &-title {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+    }
+
+}

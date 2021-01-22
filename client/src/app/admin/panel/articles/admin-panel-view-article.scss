@@ -1,0 +1,34 @@
+.admin-panel-view-article {
+
+    &__content {
+        word-break: break-word;
+    }
+
+    &__edit-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    &__edit-button {
+        margin-right: 20px;
+    }
+
+    &__last-edited {
+        font-style: italic;
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    &__buttons {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        margin-right: 20px;
+    }
+}

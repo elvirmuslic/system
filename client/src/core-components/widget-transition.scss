@@ -1,0 +1,15 @@
+.widget-transition {
+    position: relative;
+    display: inline-block;
+
+    &--widget {
+        -webkit-perspective: 0;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translate3d(0,0,0);
+        visibility: visible;
+        backface-visibility: hidden;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+    }
+}

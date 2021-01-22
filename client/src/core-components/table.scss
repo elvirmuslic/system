@@ -1,0 +1,76 @@
+@import "../scss/vars";
+
+.table {
+    margin-bottom: 0;
+
+    &__header {
+        background-color: $primary-blue;
+        color: white;
+        font-weight: normal;
+
+        &-arrow-up {
+            cursor: pointer;
+            font-size: $font-size--xs;
+            margin-left: 10px;
+        }
+
+        &-arrow-down {
+            cursor: pointer;
+            font-size: $font-size--xs;
+            margin-left: 3px;
+        }
+    }
+
+    &__header-column {
+        font-weight: normal;
+
+        &:first-child {
+            border-top-left-radius: 4px;
+        }
+
+        &:last-child {
+            border-top-right-radius: 4px
+        }
+    }
+
+    &__row {
+        border: 0;
+        color: #B8B8B8;
+
+        &:nth-child(even) {
+            background-color: #F9F9F9;
+        }
+
+        &:nth-child(odd) {
+            background-color: #F1F1F1;
+        }
+
+        &-highlighted {
+            color: $secondary-blue;
+            font-weight: bold;
+            background-color: white !important;
+        }
+    }
+
+    &__cell00 {
+        border: 0;
+        padding: 10px;
+    }
+
+    &__navigation {
+        margin-top: 10px;
+    }
+
+    &__loading-wrapper {
+        min-height: 380px;
+        position: relative;
+        background-color: $grey;
+    }
+
+    &__loading {
+        position: initial;
+        width: initial;
+        height: initial;
+        margin: auto;
+    }
+}

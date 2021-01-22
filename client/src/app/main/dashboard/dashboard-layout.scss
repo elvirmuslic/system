@@ -1,0 +1,9 @@
+.dashboard {
+    @media screen and (min-width: 993px){
+        display: flex;
+    }
+
+    &__menu {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,84 @@
+@import "../scss/vars";
+
+.drop-down {
+    border-radius: 4px;
+    width: 150px;
+    font-size: 13px;
+    user-select: none;
+    cursor: pointer;
+
+    &__current-item {
+        background-color: $light-grey;
+        border-radius: 4px 4px 0 0;
+        color: $primary-black;
+        padding: 6px;
+
+        &:focus {
+            outline: none;
+            background-color: $medium-grey;
+        }
+    }
+
+    &__current-item-icon {
+        margin-right: 8px;
+        margin-bottom: 2px;
+    }
+
+    &__list-container {
+        position: absolute;
+        width: 150px;
+        z-index: 100;
+        background-color: white;
+        height: 40px;
+    }
+
+    &__loading {
+        padding-top: 12.5%;
+
+        .loading__icon {
+            border-color: rgba(150, 150, 150, 0.2);
+            border-left-color:  $primary-red;
+        }
+    }
+
+    &__empty-list {
+        padding: 10px;
+        background-color: white;
+        color: $dark-grey;
+        font-style: italic;
+        cursor: default;
+    }
+
+    &_closed {
+
+        .drop-down__list-container {
+            pointer-events: none;
+        }
+    }
+
+    &_medium {
+        width: 200px;
+
+        .drop-down__current-item {
+            border-radius: 4px;
+        }
+
+        .drop-down__list-container {
+            width: 200px;
+            border: 1px solid $light-grey;
+        }
+    }
+
+    &_large {
+        width: 300px;
+
+        .drop-down__current-item {
+            border-radius: 4px;
+        }
+
+        .drop-down__list-container {
+            width: 300px;
+            border: 1px solid $light-grey;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.create-ticket-form {
+
+    &__file {
+        text-align: left;
+    }
+
+    &__message {
+        margin-top: 20px;
+    }
+
+    &__buttons-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__captcha {
+        margin: 0 auto 20px;
+        height: 78px;
+        width: 304px;
+    }
+}

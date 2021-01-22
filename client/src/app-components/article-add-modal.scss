@@ -1,0 +1,12 @@
+.article-add-modal {
+    width: 800px;
+
+    &__cancel-button {
+        float: left;
+        margin-top: 15px;
+    }
+
+    &__submit-button {
+        float: right;
+    }
+}

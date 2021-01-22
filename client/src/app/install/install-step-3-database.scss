@@ -1,0 +1,23 @@
+@import "../../scss/vars";
+
+.install-step-3 {
+
+    &__message {
+        margin-bottom: 20px;
+    }
+
+    &__previous {
+        float: left;
+    }
+
+    &__buttons {
+        width: 55%;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__next {
+    }
+}

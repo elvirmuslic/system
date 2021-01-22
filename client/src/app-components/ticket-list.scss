@@ -1,0 +1,50 @@
+@import "../scss/vars";
+
+.ticket-list {
+    &__order-icon {
+        padding-left: 5px;
+        font-size: 14px;
+    }
+
+    &__filters {
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    &__department-selector {
+        display: inline-block;
+        margin-right: 25px;
+        text-align: center;
+    }
+
+    &__checkbox {
+        display: inline-block;
+    }
+
+    &__number {
+        text-align: left;
+    }
+
+    &__title {
+        text-align: left;
+    }
+
+    &__department {
+        text-align: right;
+    }
+
+    &__author {
+        text-align: center;
+    }
+
+    &__date {
+        text-align: right;
+    }
+
+    &__title-link:hover,
+    &__title-link:focus {
+        outline: none;
+        text-decoration: underline;
+    }
+
+}

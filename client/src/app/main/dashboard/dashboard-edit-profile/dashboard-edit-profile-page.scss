@@ -1,0 +1,34 @@
+@import '../../../../scss/vars';
+
+.edit-profile-page {
+
+    &__title {
+        color: $dark-grey;
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    &__message {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__custom-fields {
+        text-align: left;
+    }
+
+    &__custom-field {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    &__change-email-container,
+    &__change-password-container,
+    &__edit-custom-field-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

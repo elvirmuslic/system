@@ -1,0 +1,34 @@
+@import "../scss/vars";
+
+.text-editor {
+
+    .text-editor__editor {
+        background-color: white;
+        border: 1px solid $grey;
+        border-radius: 3px;
+
+        .ql-editor {
+            min-height: 200px;
+        }
+    }
+
+    &_focused {
+        .text-editor__editor {
+            border-color: $primary-blue;
+        }
+    }
+
+    &_errored {
+        .text-editor__editor {
+            border: 1px solid $primary-red;
+        }
+    }
+
+    &_textarea {
+        .text-editor__editor {
+            height: 200px;
+            padding-left: 10px;
+            width: 100%;
+        }
+    }
+}
