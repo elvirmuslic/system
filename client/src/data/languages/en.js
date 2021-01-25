@@ -43,7 +43,7 @@ export default {
     'NO': 'Ne',
     'CANCEL': 'Otkaži',
     'MY_ACCOUNT': 'Moj Nalog',
-    'DASHBOARD': 'Dashboard (komandna tabla)',
+    'DASHBOARD': 'Dashboard',
     'USERS': 'Korisnici',
     'SETTINGS': 'Podešavanja',
     'STATISTICS': 'Statistika',
