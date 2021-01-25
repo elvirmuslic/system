@@ -1,6 +1,6 @@
 export default {
     'WELCOME': 'Dobrodošli',
-    'TICKETS': 'Tiketi',
+    'TICKETS': 'Upiti',
     'ARTICLES': 'Upiti i Ostalo',
     'ACCOUNT': 'Nalog',
     'SUBMIT': 'Prijavi',
@@ -305,7 +305,7 @@ export default {
     //VIEW DESCRIPTIONS
     'CREATE_TICKET_DESCRIPTION': 'Ostavite vase podatke i unesite problem, predlog, zamerku. U najkraćem mogućem roku ćete dobiti odgovor.',
     'TICKET_LIST_DESCRIPTION': 'Ovde možete naći listu svih tiketa koje su nam poslate.',
-    'TICKETS_DESCRIPTION': 'Pošaljite tiket preko sistema za podrsku i dobićete odgovor na vaše misli, predloge i probleme.',
+    'TICKETS_DESCRIPTION': 'Pošaljite upit preko sistema za podrsku i dobićete odgovor na vaše misli, predloge i probleme.',
     'ARTICLES_DESCRIPTION': 'Pogledajte artikle o čestim problemima, vodičima i dokumentaciji.',
     'ACCOUNT_DESCRIPTION': 'Svi vaši tiketi su sačuvani na vašem nalogu. Pratite sve vaše tikete poslate našem osoblju.',
     'SUPPORT_CENTER_DESCRIPTION': 'Dobrodošli u naš sistem podrške. Možete nas kontaktirati preko sistema za tikete. Vaši tiketi će biti odgovoreni od strane osoblja.',
